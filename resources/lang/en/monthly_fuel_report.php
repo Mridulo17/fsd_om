@@ -1,0 +1,30 @@
+<?php
+
+return [
+    "monthly_fuel_report" => "Monthly Fuel Report",
+    "monthly_fuel_reports" => "Monthly Fuel Reports",
+    "add_monthly_fuel_report" => "Add Monthly Fuel Report",
+    "employee_id" => "Employee",
+    "fire_station_id" => " Fire Station",
+    "assigned_vehicle_id" => "Assigned Vehicle",
+    "designation_id" => "Designation",
+    "months" => "Month",
+    "january" => "জানুয়ারী",
+    "february" => "ফেব্রুয়ারী",
+    "march" => "মার্চ",
+    "april" => "এপ্রিল",
+    "may" => "মে",
+    "june" => "জুন",
+    "july" => "জুলাই",
+    "august" => "আগস্ট",
+    "september" => "সেপ্টেম্বর",
+    "october" => "অক্টোবর",
+    "november" => "নভেম্বর",
+    "december" => "ডিসেম্বর",
+    "work_type_place" => "Work Type & Place",
+    "fuel_type" => "Fuel Type",
+    "meter_reading" => "Meter Reading Per (K.M)",
+    "distance_per_liter" => "Distance Per Liter",
+    "total_fuel_cost" => "Total Fuel Cost",
+    "comment" => "Comment"
+];

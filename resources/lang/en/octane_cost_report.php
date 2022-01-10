@@ -1,0 +1,40 @@
+<?php
+
+return [
+    "octane_cost_report" => "Octane Cost Report",
+    "octane_cost_reports" => "Octane Cost Reports",
+    "add_octane_cost_report" => "Add Octane Cost Report",
+    "employee_id" => "Employee",
+    "fire_station_id" => " Fire Station",
+    "designation_id" => " Designation",
+    "months" => "Month",
+
+    "previous_report" => "Previous Report",
+    "purchase_formula" => "Purchase Formula",
+    "purchase_Source" => "Purchase Source",
+    "purchase_date" => "Purchase Date",
+    "purchase_amount_liters" => "Purchase Amount Liters",
+    "total_amount_liters" => "Total Amount Liters",
+    "issue_date" => "Issue Sate",
+    "godiva_pump" => "Godiva Pump",
+    "angus_pump" => "Angus Pump",
+    "firman_generator" => "Firman Generator",
+    "Monthly octane cost statement:" => "Monthly octane cost statement:",
+    "honda_generator" => "Honda Generator",
+    "smoke_ejector" => "Smoke Ejector",
+    "rotary_rescue_saw" => "Rotary Rescue Saw",
+    "eli_generator" => "Eli Generator",
+    "maintenance_work_issue" => "Maintenance Work Issue",
+    "others" => "Others",
+    "operational_work_issue" => "Operational Work Issue",
+    "administrative_work_issue" => "Administrative Work Issue",
+    "total_cost_liter" => "Total Cost Liter",
+    "remaining" => "Remaining",
+    "power_unit_1" => "Power Unit 1",
+    "power_unit_2" => "Power Unit 2",
+    "power_unit_3" => "Power Unit 3",
+    "power_unit_4" => "Power Unit 4",
+    "power_unit_5" => "Power Unit 5",
+    "comment" => "Comment"
+
+];
