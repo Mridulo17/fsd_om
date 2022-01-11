@@ -3,7 +3,7 @@
 @section('title') @lang('octane_cost_report.octane_cost_report') {{ $octane_cost_report->tracking_no }} @endsection
 
 @section('header')
-    <table style="border: 2px solid #fff; height: 100%; font-size: 18px;">
+    <table style="border: 2px solid #fff; height: 100%; font-size: 18px; text-align: center">
         <tr>
             <td class="bb-none bl-none text-center">
                 {{$octane_cost_report->fireStation->bn_name}}/
@@ -20,7 +20,7 @@
     <br><br> <br> <br>
     <table style="border: 2px solid #000; height: 900px; width: 100%;">
         <tr>
-            <th colspan="24" span="12"  class="p-2 text-center bg-info font-size-14 text-white">
+            <th style="font-size: 20px;" colspan="24" span="12"  class="p-2 text-center bg-info font-size-14 text-white">
                 @lang('octane_cost_report.octane_cost_reports')
             </th>
         </tr>
@@ -48,6 +48,7 @@
             <td>@lang('octane_cost_report.total_cost_issue')</td>
             <td>@lang('octane_cost_report.remaining')</td>
             <td>@lang('octane_cost_report.comment')</td>
+            <td>@lang('octane_cost_report.power_unit')</td>
         </tr>
         @foreach($octane_cost_report->octaneCostReportDetails as $key => $octane_cost_report_detail)
             <tr>
@@ -66,6 +67,7 @@
                 <td class="">{{ $octane_cost_report_detail->smoke_ejector }}</td>
                 <td class="">{{ $octane_cost_report_detail->rotary_rescue_saw }}</td>
                 <td class="">{{ $octane_cost_report_detail->eli_generator }}</td>
+
                 <td class="">{{ $octane_cost_report_detail->two_wheeler }}</td>
                 <td class="">{{ $octane_cost_report_detail->maintenance_work_issue }}</td>
                 <td class="">{{ $octane_cost_report_detail->others }}</td>
@@ -76,30 +78,16 @@
                 <td class="">{{ $octane_cost_report_detail->comment }}</td>
             </tr>
         @endforeach
+        <td>
+            @foreach($octane_cost_report->octaneCostPowerUnit as $key => $octane_cost_power_unit)
+                {{ $octane_cost_power_unit->power_unit }},
+            @endforeach
+        </td>
     </table>
 
     <br>
     <br>
     <br>
-    <table style="width: 100%">
-        <thead>
-        <tr>
-            <th colspan="16" span="8"  class="p-2 text-center bg-info font-size-14 text-white">
-                @lang('octane_cost_report.power_unit')
-            </th>
-        </tr>
-        </thead>
-        <tr>
-            <th style="width: 50%" class="p-2 text-center font-size-14 text-white">#</th>
-            <th style="width: 50%" class="p-2 text-center font-size-14 text-white">@lang('octane_cost_report.power_unit')</th>
-        </tr>
-        @foreach($octane_cost_report->octaneCostPowerUnit as $key => $power_unit)
-            <tr>
-                <td class="text-center" lang="bang">{{ $key+1 }}</td>
-                <td class="text-center">{{ $power_unit->power_unit }}</td>
-            </tr>
-        @endforeach
-    </table>
 @endsection
 
 @section('footer')

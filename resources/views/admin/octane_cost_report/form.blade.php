@@ -254,9 +254,9 @@
                         <div class="form-group">
                             <input v-model="row.two_wheeler" class="{{$error_class}} form-control"
                                    :name="'octane_cost_reports['+index+'][two_wheeler]'" id="two_wheeler">
-                            <a href="" class="input-group-text modal_lg_button text-secondary" parent="type_id">
-                                <i class="fa fa-plus-circle"></i>
-                            </a>
+{{--                            <a class="input-group-text modal_lg_button text-secondary" parent="type_id">--}}
+{{--                                <i class="fa fa-plus-circle"></i>--}}
+{{--                            </a>--}}
 {{--                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>--}}
                             @if ($errors->has('two_wheeler'))
                                 <p class="text-danger">{{$errors->first('two_wheeler')}}</p>
@@ -365,34 +365,6 @@
                 @lang('octane_cost_report.add_octane_cost_report')
             </a>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="mt-3">
@@ -466,34 +438,6 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-            </div>
-        </div>
-    </div>
-</div>
 @include('components.modal_lg')
 @if(!request()->ajax()) @section('script') @endif
 <script src="{{ URL::asset('/assets/common/libs/parsleyjs/parsleyjs.min.js') }}"></script>
